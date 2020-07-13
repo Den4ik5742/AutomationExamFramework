@@ -14,17 +14,17 @@ public class SearchWithParamsTests {
     private String startPrice;
     private String endPrice;
 
-   // @Factory(dataProvider = "searchKeyProvider")
+    @Factory(dataProvider = "searchKeyProvider")
     public SearchWithParamsTests(String param, String startPrice, String endPrice) {
         this.param = param;
         this.startPrice = startPrice;
         this.endPrice = endPrice;
     }
 
-//    @DataProvider
-//    public static Object[][] searchKeyProvider() {
-//        return new Object[][]{{"телевизор", "300", "700"}, {"телефон", "100", "1000"}, {"пылесос", "50", "600"}};
-//    }
+    @DataProvider
+    public static Object[][] searchKeyProvider() {
+        return new Object[][]{{"телевизор", "300", "700"}, {"телефон", "100", "1000"}, {"пылесос", "50", "600"}};
+    }
 
     @Test
     public void performSearchWihPriceParams() {
