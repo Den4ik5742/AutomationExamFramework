@@ -8,7 +8,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
     private int retryLimit = 4;
 
     public boolean retry(ITestResult iTestResult) {
-        if (counter < retryLimit){
+        if (counter < retryLimit) {
             counter++;
             return true;
         }
