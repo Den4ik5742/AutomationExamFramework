@@ -17,5 +17,16 @@ public class FeaturedProductsHelper extends AbstractHelper {
         return featuredProductsPage.isFeaturedProductsNotEmpty();
     }
 
+    public FeaturedProductsHelper deleteProduct() {
+        featuredProductsPage
+                .clickToDelete();
+        return new FeaturedProductsHelper();
+    }
+    public ProductHelper navigateToItem() {
+        System.out.println("Navigate to 'Product' page");
+        featuredProductsPage
+                .navigateToProductPageFromFeatured();
+        return new ProductHelper();
+    }
 
 }
