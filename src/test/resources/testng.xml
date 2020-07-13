@@ -17,7 +17,7 @@
             <class name="project.by.stormnet.functional.tests.VekByTests.ProductPageTest"/>
             <class name="project.by.stormnet.functional.tests.VekByTests.RedirectToMenuTabsTest"/>
             <class name="project.by.stormnet.functional.tests.VekByTests.SearchTest"/>
-            <class name="project.by.stormnet.functional.tests.VekByTests.SearchWithParamsTests"/>
+            <class name="project.by.stormnet.functional.tests.VekByTests.SearchWithParamsTestsFactory"/>
             <class name="project.by.stormnet.functional.tests.VekByTests.OpenLoginPageTest"/>
         </classes>
     </test>
